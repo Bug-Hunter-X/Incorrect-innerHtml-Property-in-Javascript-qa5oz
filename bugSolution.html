@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <div id="myDiv">
+    This is some text inside a div.
+    <p>This paragraph is inside the div.</p>
+  </div>
+  <script>
+    //This is javascript code that will correctly update the div
+    document.getElementById("myDiv").innerHTML = "<p>This is new text inside the div.</p>";
+  </script>
+</body>
+</html>
