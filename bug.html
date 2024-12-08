@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <div id="myDiv">
+    This is some text inside a div.
+    <p>This paragraph is inside the div.</p>
+  </div>
+  <script>
+    //This is javascript code that will throw an error when running
+    document.getElementById("myDiv").innerHtml = "<p>This is new text inside the div.</p>";
+    //Error: innerHtml should be innerHTML
+  </script>
+</body>
+</html>
